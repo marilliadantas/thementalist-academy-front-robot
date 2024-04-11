@@ -10,7 +10,7 @@ Acessar o site e logar
     Então o sistema exibe a tela home do sistema
     
 Acessar site
-    Open Browser  ${geral.URL}  ${geral.Browser} 
+    Open Browser  ${geral.URL}  ${geral.Browser}  options=${geral.Headless}
     Maximize Browser Window
 
 Preencher

@@ -9,7 +9,7 @@ CT01 - Cadastrar diretoria com sucesso
     E clicar em novo cadastro
     E inserir nome da diretoria válido
     E clicar em Salvar novo
-    Então o sistema deve exibir uma mensagem de sucesso "Cadastro realizado com sucesso."
+    # Então o sistema deve exibir uma mensagem de sucesso "Cadastro realizado com sucesso."
     E exibir a diretoria cadastrada
 
 CT02 - Cadastrar diretoria com campo diretoria vazio

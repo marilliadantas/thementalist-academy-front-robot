@@ -3,10 +3,10 @@ Resource    ../main.robot
 
 *** Variables ***
 ${cadastroButton}             id=Cadastros
-${usuariosButton}             //span[@class='MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-yb0lig'][contains(.,'Usuários')]
+${usuariosButton}             id=Usuários
 ${novoCadastroButton}         id=Novo Cadastro
 ${nomeInput}                  id=fullName
-${mailIInput}                 //input[contains(@name,'mail')]
+${mailIInput}                 id=mail
 ${perfilAcessoInput}          id=accessProfile
 ${cpfInput}                   id=cpf
 ${senhaInput}                 id=password
@@ -34,7 +34,7 @@ Quando acessar a tela de cadastro de usuários
     Wait Until Page Contains              Novo Cadastro
     
 E inserir nome completo
-    ${NOME}                         FakerLibrary.FirstName
+    ${NOME}        FakerLibrary.FirstName
     Preencher      ${nomeInput}     ${NOME} Silva
 
 E inserir e-mail

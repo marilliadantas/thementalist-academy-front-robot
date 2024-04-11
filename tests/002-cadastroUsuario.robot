@@ -97,7 +97,7 @@ CT08 - Cadastrar usuário com senha vazio
     E não inserir senha
     E inserir a senha novamente
     E clicar em Salvar novo
-#     Então o sistema exibe a mensagem "O campo senha é obrigatório"
+    # Então o sistema exibe a mensagem "O campo senha é obrigatório"
 
 CT09 - Cadastrar usuário com confirmar senha vazio
     Dado que o usuário está logado na QaCoders academy
@@ -109,7 +109,7 @@ CT09 - Cadastrar usuário com confirmar senha vazio
     E inserir a senha
     E não inserir a senha novamente
     E clicar em Salvar novo
-#     Então o sistema exibe a mensagem "O campo de confirmação de senha é obrigatório"
+    # Então o sistema exibe a mensagem "O campo de confirmação de senha é obrigatório"
 
 CT10 - Cadastrar usuário com todos os campos vazios
     Dado que o usuário está logado na QaCoders academy

@@ -29,7 +29,7 @@ E inserir nome da diretoria válido
     ${DIRETORIA}=              FakerLibrary.Word
     Set Test Variable          ${DIRETORIA_CRIADA}      Diretoria&${DIRETORIA} 
     Log    ${DIRETORIA_CRIADA}
-    Preencher                  ${diretoriaInput}        ${DIRETORIA_CRIADA}  
+    Preencher                  ${diretoriaInput}        ${DIRETORIA_CRIADA} 
 
 E inserir diretoria "${diretoria}"
     Limpar campo     ${diretoriaInput}
