@@ -13,5 +13,3 @@ Resource   shared/setup_teardown.robot
 
 #Pages
 Resource   pages/login_page.robot
-Resource   pages/usuarios_page.robot
-Resource   pages/diretoria_page.robot
