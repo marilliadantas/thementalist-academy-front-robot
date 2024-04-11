@@ -7,7 +7,6 @@ ${diretoriasButton}           id=Diretorias
 ${novoCadastroButton}         id=Novo Cadastro
 ${diretoriaInput}             id=boardName
 ${salvarNovoButton}           id=save
-${cancelarButton}             id=cancel
 ${msgErro}                    //p[@class="css-bbipig"]
 ${alert}                      //div[@class="MuiAlert-message css-1xsto0d"]
 ${ultimaPaginaButton}         css=.css-76nm1l > :nth-child(5)
@@ -41,6 +40,10 @@ E inserir diretoria com caracter especial @
 
 E não inserir diretoria
     Limpar campo     ${diretoriaInput}
+
+E clicar em Salvar
+    Clicar    ${salvarNovoButton}
+    
 
 Então o sistema deve exibir uma mensagem de sucesso "${msgEsperada}"
     Validar mensagem       ${alert}    ${msgEsperada}

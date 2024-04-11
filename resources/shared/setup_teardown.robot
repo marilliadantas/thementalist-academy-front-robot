@@ -15,22 +15,22 @@ Acessar site
 
 Preencher
     [Arguments]    ${locator}       ${variavel}
-    Wait Until Element Is Visible   ${locator}      10
+    Wait Until Element Is Visible   ${locator}      5
     Input Text     ${locator}       ${variavel}
 
 Clicar
     [Arguments]      ${locator}
-    Wait Until Element Is Visible   ${locator}      10
+    Wait Until Element Is Visible   ${locator}      5
     Click Element    ${locator}
 
 Limpar campo
     [Arguments]      ${locator}
-    Wait Until Element Is Visible   ${locator}      10
+    Wait Until Element Is Visible   ${locator}      5
     Clear Element Text    ${locator} 
 
 Validar mensagem
     [Arguments]     ${locator}      ${texto} 
-    Wait Until Element Is Visible   ${locator}      10
+    Wait Until Element Is Visible   ${locator}      5
     Element Text Should Be          ${locator}    ${texto}     
 
 Validar URL
