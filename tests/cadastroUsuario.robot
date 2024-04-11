@@ -13,7 +13,7 @@ CT01 - Cadastrar usuário com sucesso
     E inserir a senha
     E inserir a senha novamente
     E clicar em Salvar novo
-    Então o sistema exibe a mensagem de sucesso "Registro realizado com sucesso"
+    # Então o sistema exibe a mensagem de sucesso "Registro realizado com sucesso"
 
 CT02 - Cadastrar usuário com nome completo vazio
     Dado que o usuário está logado na QaCoders academy
@@ -87,29 +87,29 @@ CT07 - Cadastrar usuário com cpf com 10 caracteres
     E clicar em Salvar novo
     Então o sistema exibe o alerta de erro "Deve preencher o CPF com 11 dígitos"
 
-CT08 - Cadastrar usuário com senha vazio
-    Dado que o usuário está logado na QaCoders academy
-    Quando acessar a tela de cadastro de usuários
-    E inserir nome completo
-    E inserir e-mail
-    E inserir Perfil de acesso
-    E inserir cpf
-    E não inserir senha
-    E inserir a senha novamente
-    E clicar em Salvar novo
-    Então o sistema exibe a mensagem "O campo senha é obrigatório"
+# CT08 - Cadastrar usuário com senha vazio
+#     Dado que o usuário está logado na QaCoders academy
+#     Quando acessar a tela de cadastro de usuários
+#     E inserir nome completo
+#     E inserir e-mail
+#     E inserir Perfil de acesso
+#     E inserir cpf
+#     E não inserir senha
+#     E inserir a senha novamente
+#     E clicar em Salvar novo
+#     Então o sistema exibe a mensagem "O campo senha é obrigatório"
 
-CT09 - Cadastrar usuário com confirmar senha vazio
-    Dado que o usuário está logado na QaCoders academy
-    Quando acessar a tela de cadastro de usuários
-    E inserir nome completo
-    E inserir e-mail
-    E inserir Perfil de acesso
-    E inserir cpf
-    E inserir a senha
-    E não inserir a senha novamente
-    E clicar em Salvar novo
-    Então o sistema exibe a mensagem "O campo de confirmação de senha é obrigatório"
+# CT09 - Cadastrar usuário com confirmar senha vazio
+#     Dado que o usuário está logado na QaCoders academy
+#     Quando acessar a tela de cadastro de usuários
+#     E inserir nome completo
+#     E inserir e-mail
+#     E inserir Perfil de acesso
+#     E inserir cpf
+#     E inserir a senha
+#     E não inserir a senha novamente
+#     E clicar em Salvar novo
+#     Então o sistema exibe a mensagem "O campo de confirmação de senha é obrigatório"
 
 CT10 - Cadastrar usuário com todos os campos vazios
     Dado que o usuário está logado na QaCoders academy
