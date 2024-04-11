@@ -34,7 +34,7 @@ Quando acessar a tela de cadastro de usuários
     Wait Until Page Contains              Novo Cadastro
     
 E inserir nome completo
-    ${NOME}                         FakerLibrary.First Name
+    ${NOME}                         FakerLibrary.FirstName
     Preencher      ${nomeInput}     ${NOME} Silva
 
 E inserir e-mail

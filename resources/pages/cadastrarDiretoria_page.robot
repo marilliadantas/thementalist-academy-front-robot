@@ -26,7 +26,7 @@ E clicar em novo cadastro
     Clicar        ${novoCadastroButton}
 
 E inserir nome da diretoria válido
-    ${DIRETORIA}=              FakerLibrary.Job 
+    ${DIRETORIA}=              FakerLibrary.Job
     Set Test Variable          ${DIRETORIA_CRIADA}      Diretoria&${DIRETORIA} 
     Log    ${DIRETORIA_CRIADA}
     Preencher                  ${diretoriaInput}        ${DIRETORIA_CRIADA}  
