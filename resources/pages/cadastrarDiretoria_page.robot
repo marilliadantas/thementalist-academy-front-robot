@@ -26,18 +26,19 @@ E clicar em novo cadastro
     Clicar        ${novoCadastroButton}
 
 E inserir nome da diretoria válido
-    ${DIRETORIA}=              FakerLibrary.Word
-    Set Test Variable          ${DIRETORIA_CRIADA}      Diretoria&${DIRETORIA} 
-    Log    ${DIRETORIA_CRIADA}
-    Preencher                  ${diretoriaInput}        ${DIRETORIA_CRIADA} 
+    ${palavra_randomica}    Generate Random String    length=10    chars=[LETTERS]
+    ${palavra_randomica}    Convert To Lower Case     ${palavra_randomica}
+    Set Test Variable       ${DIRETORIA_CRIADA}      ${palavra_randomica}
+    Log                     ${DIRETORIA_CRIADA}
+
+    Preencher               ${diretoriaInput}        ${DIRETORIA_CRIADA} 
 
 E inserir diretoria "${diretoria}"
     Limpar campo     ${diretoriaInput}
     Preencher        ${diretoriaInput}      ${diretoria}
 
 E inserir diretoria com caracter especial @
-    ${DIRETORIA}=    FakerLibrary.Word 
-    Preencher        ${diretoriaInput}      ${DIRETORIA}@
+    Preencher        ${diretoriaInput}      Diretoria@
 
 E não inserir diretoria
     Limpar campo     ${diretoriaInput}

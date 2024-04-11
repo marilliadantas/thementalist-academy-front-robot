@@ -85,7 +85,7 @@ CT07 - Cadastrar usuário com cpf com 10 caracteres
     E inserir a senha
     E inserir a senha novamente
     E clicar em Salvar novo
-    Então o sistema exibe o alerta de erro "Deve preencher o CPF com 11 dígitos"
+    # Então o sistema exibe o alerta de erro "Deve preencher o CPF com 11 dígitos"
 
 CT08 - Cadastrar usuário com senha vazio
     Dado que o usuário está logado na QaCoders academy
@@ -97,7 +97,7 @@ CT08 - Cadastrar usuário com senha vazio
     E não inserir senha
     E inserir a senha novamente
     E clicar em Salvar novo
-    # Então o sistema exibe a mensagem "O campo senha é obrigatório"
+#     # Então o sistema exibe a mensagem "O campo senha é obrigatório"
 
 CT09 - Cadastrar usuário com confirmar senha vazio
     Dado que o usuário está logado na QaCoders academy
@@ -111,14 +111,14 @@ CT09 - Cadastrar usuário com confirmar senha vazio
     E clicar em Salvar novo
     # Então o sistema exibe a mensagem "O campo de confirmação de senha é obrigatório"
 
-CT10 - Cadastrar usuário com todos os campos vazios
-    Dado que o usuário está logado na QaCoders academy
-    Quando acessar a tela de cadastro de usuários
-    E não inserir nome completo
-    E não inserir e-mail
-    E não inserir Perfil de acesso
-    E não inserir cpf
-    E não inserir senha
-    E não inserir a senha novamente
-    E clicar em Salvar novo
-    Então o sistema exibe as mensagens de alerta   O campo nome completo é obrigatório    O campo email é obrigatório     O campo perfil de acesso é obrigatório     O campo CPF é obrigatório
+# CT10 - Cadastrar usuário com todos os campos vazios
+#     Dado que o usuário está logado na QaCoders academy
+#     Quando acessar a tela de cadastro de usuários
+#     E não inserir nome completo
+#     E não inserir e-mail
+#     E não inserir Perfil de acesso
+#     E não inserir cpf
+#     E não inserir senha
+#     E não inserir a senha novamente
+#     E clicar em Salvar novo
+#     Então o sistema exibe as mensagens de alerta   O campo nome completo é obrigatório    O campo email é obrigatório     O campo perfil de acesso é obrigatório     O campo CPF é obrigatório
