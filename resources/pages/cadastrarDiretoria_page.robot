@@ -27,11 +27,12 @@ E clicar em novo cadastro
 
 E inserir nome da diretoria válido
     ${DIRETORIA}=              FakerLibrary.Job 
-    Set Test Variable          ${DIRETORIA_CRIADA}    Diretoria&${DIRETORIA} 
+    Set Test Variable          ${DIRETORIA_CRIADA}      Diretoria&${DIRETORIA} 
     Log    ${DIRETORIA_CRIADA}
     Preencher                  ${diretoriaInput}        ${DIRETORIA_CRIADA}  
 
 E inserir diretoria "${diretoria}"
+    Limpar campo     ${diretoriaInput}
     Preencher        ${diretoriaInput}      ${diretoria}
 
 E inserir diretoria com caracter especial @
