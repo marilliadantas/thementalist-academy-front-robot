@@ -10,19 +10,19 @@ CT01 - Login como administrador
     E clicar em entrar
     Então o sistema exibe a tela home do sistema
 
-# CT02 - Login com email inválido
-#     Dado que o usuário acessa a página de login QaCoders Academy
-#     Quando inserir email  ${EMAIL_INVALIDO}
-#     E inserir senha  ${SENHA}
-#     E clicar em entrar
-#     Então o sistema exibe a mensagem de erro "E-mail e/ou senha inválidos"
+CT02 - Login com email inválido
+    Dado que o usuário acessa a página de login QaCoders Academy
+    Quando inserir email  ${EMAIL_INVALIDO}
+    E inserir senha  ${SENHA}
+    E clicar em entrar
+    Então o sistema exibe a mensagem de erro "E-mail e/ou senha inválidos"
 
-# CT03 - Login com senha inválida
-#     Dado que o usuário acessa a página de login QaCoders Academy
-#     Quando inserir email  ${EMAIL}
-#     E inserir senha  ${SENHA_INVALIDA}
-#     E clicar em entrar
-#     Então o sistema exibe a mensagem de erro "E-mail e/ou senha inválidos"
+CT03 - Login com senha inválida
+    Dado que o usuário acessa a página de login QaCoders Academy
+    Quando inserir email  ${EMAIL}
+    E inserir senha  ${SENHA_INVALIDA}
+    E clicar em entrar
+    Então o sistema exibe a mensagem de erro "E-mail e/ou senha inválidos"
 
 CT04 - Login com email em branco
     Dado que o usuário acessa a página de login QaCoders Academy
