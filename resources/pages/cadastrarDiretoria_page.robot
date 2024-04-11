@@ -26,7 +26,7 @@ E clicar em novo cadastro
     Clicar        ${novoCadastroButton}
 
 E inserir nome da diretoria válido
-    ${DIRETORIA}=              FakerLibrary.Job
+    ${DIRETORIA}=              FakerLibrary.Word
     Set Test Variable          ${DIRETORIA_CRIADA}      Diretoria&${DIRETORIA} 
     Log    ${DIRETORIA_CRIADA}
     Preencher                  ${diretoriaInput}        ${DIRETORIA_CRIADA}  
@@ -36,8 +36,8 @@ E inserir diretoria "${diretoria}"
     Preencher        ${diretoriaInput}      ${diretoria}
 
 E inserir diretoria com caracter especial @
-    ${DIRETORIA}=    FakerLibrary.Job 
-    Preencher        ${diretoriaInput}      ${DIRETORIA} @
+    ${DIRETORIA}=    FakerLibrary.Word 
+    Preencher        ${diretoriaInput}      ${DIRETORIA}@
 
 E não inserir diretoria
     Limpar campo     ${diretoriaInput}
