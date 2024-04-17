@@ -9,4 +9,3 @@ Cenário 01 - Acessar página do projeto do Qa.Coders
     [Tags]             acesso
     Acessar página do projeto
     Fazer login com o usuário administrador
-

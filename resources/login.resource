@@ -4,13 +4,13 @@ Resource    ../resources/util/util.resource
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser    browser=${BROWSER}    options=add_experimental_option("detach", True)
+    Open Browser    browser=${BROWSER}
     Maximize Browser Window
 
 Acessar página do projeto
     Go To   ${URL}
     Wait Until Element Is Visible    locator=${LOGIN}
-    Wait Until Page Contains    text=${TEXT_LOGIN}
+    Wait Until Page Contains         text=${TEXT_LOGIN}
 
 Fazer login com o usuário administrador
     Input Text      locator=${TEXT_MAIL}        text=${MAIL}
