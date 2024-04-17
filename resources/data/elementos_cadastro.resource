@@ -1,5 +1,4 @@
 *** Variables ***
-
 ${BUTTON_CADASTRO}     (//div[contains(.,'Cadastros')])[2]
 ${NEW_CADASTRO}        id=Novo Cadastro
 ${NAME_COMPLETO}       //label[@for='fullName'][contains(.,'Nome Completo*')]
