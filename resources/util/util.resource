@@ -9,6 +9,7 @@ Resource  ../data/elementos_diretoria.resource
 
 #Variables
 Resource    ../data/variaveis_login.resource
+Resource    ../util/actions.robot
 
 #Pastas com as Keywords
 Resource    ../login.resource
