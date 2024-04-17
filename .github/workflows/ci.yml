@@ -19,6 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install robotframework-seleniumlibrary
+        pip install robotframework-faker
         pip install setuptools
 
     - name: Run Robot Framework tests

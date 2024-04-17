@@ -1,7 +1,7 @@
 *** Variables ***
 
 ${BUTTON_CADASTRO}     (//div[contains(.,'Cadastros')])[2]
-${NEW_CADASTRO}        //button[@class='css-fvzsut'][contains(.,'Novo Cadastro')]
+${NEW_CADASTRO}        id=Novo Cadastro
 ${NAME_COMPLETO}       //label[@for='fullName'][contains(.,'Nome Completo*')]
 ${BUTTON_CADASTRAR}    //button[@type='submit'][contains(.,'SALVAR NOVO')]
 ${FULLNAME}            //input[contains(@name,'fullName')]           

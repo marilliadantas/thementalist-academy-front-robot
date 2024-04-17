@@ -17,5 +17,5 @@ Fazer login com o usuário administrador
     Input Text      locator=${TEXT_PASSWORD}    text=${PASSWORD}
     Click Button    locator=${BUTTON_ENTRAR}
 
-# Fechar o navegador
-#     Close Browser
+Fechar o navegador
+    Close Browser

@@ -8,10 +8,14 @@ Cadastrar usuário com sucesso
     Click Element    Usuários
     Wait Until Element Is Visible    locator=${NEW_CADASTRO}
     Click Button    ${NEW_CADASTRO}
-    Input Text      locator=${FULLNAME}           text=Mayla Santoa
-    Input Text      locator=${MAIL_CADASTRO}      text=lmay@gmailqa.com.br
+    ${nome}         FakerLibrary.First Name
+    ${sobrenome}    FakerLibrary.Last Name
+    ${username}     FakerLibrary.User Name
+    Input Text      locator=${FULLNAME}           text=${nome} ${sobrenome} 
+    Input Text      locator=${MAIL_CADASTRO}      text=${username}@qacoders.com.br
     Input Text      locator=${ACESSPROFILE}       text=ADMIN
-    Input Text      locator=${CPF}                text=83677000004
+    ${cpfAleatorio}          FakerLibrary.random_number    11    11 
+    Input Text      locator=${CPF}                text=${cpfAleatorio} 
     Input Text      locator=${PASSWORD_CADASTRO}  text=Qa#12336
     Input Text      locator=${CONFIRMPASSWORD}    text=Qa#12336
     Click Button    locator=${BUTTON_CADASTRAR}

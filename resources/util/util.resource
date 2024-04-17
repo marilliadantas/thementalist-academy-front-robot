@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    FakerLibrary
 
 #Pastas referentes aos elementos da página
 Resource  ../data/elementos_cadastro.resource

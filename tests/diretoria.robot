@@ -1,5 +1,6 @@
 *** Settings ***
 Resource    ../resources/util/util.resource
+Test Teardown   Fechar o navegador
 
 *** Test Cases ***
 
