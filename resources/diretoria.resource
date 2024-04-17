@@ -11,5 +11,5 @@ Cadastrar diretoria com sucesso
 
     ${diretoria}    FakerLibrary.Random Uppercase Letter
 
-    Input Text      locator=${NAME_DIRETORIA}    text=CEO ${diretoria}
+    Input Text      locator=${NAME_DIRETORIA}    text=CEO& ${diretoria}
     Click Button    locator=${BUTTON_CADASTRAR}
