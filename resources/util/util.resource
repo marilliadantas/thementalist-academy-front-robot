@@ -6,7 +6,9 @@ Library    FakerLibrary
 Resource  ../data/elementos_cadastro.resource
 Resource  ../data/elementos_login.resource
 Resource  ../data/elementos_diretoria.resource
-
+Resource  ../data/elementos_listar_diretoria.resource
+Resource  ../data/elementos_editar_cadastro.resource
+Resource  ../data/elementos_listar_cadastro.resource
 #Variables
 Resource    ../data/variaveis_login.resource
 Resource    ../util/actions.robot
@@ -15,3 +17,6 @@ Resource    ../util/actions.robot
 Resource    ../login.resource
 Resource    ../cadastro.resource
 Resource    ../diretoria.resource
+Resource    ../listar_diretoria.resource
+Resource    ../editar_cadastro.resource
+Resource    ../listar_cadastro.resource
