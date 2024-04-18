@@ -53,10 +53,8 @@ Validar as mensagens de erro
     ${text}        getTextIndex      ${ERROR_REQUIRED}    1
     Should Be Equal As Strings       ${alerta2}        ${text}
 
-Validar mensagem de alerta "${alertaEsperado}"
-    ${text}        getText        ${ALERT_ERROR}
-    Should Be Equal As Strings    ${alertaEsperado}       ${text}
-    
+Validar a mensagem de alerta "${alertaEsperado}"
+    Validar mensagem    ${ALERT_ERROR}    ${alertaEsperado}
 
 Fechar o navegador
     Close Browser

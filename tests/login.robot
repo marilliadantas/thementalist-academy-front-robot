@@ -1,6 +1,5 @@
 *** Settings ***
 Resource    ../resources/util/util.resource
-
 Test Setup       Abrir o navegador
 
 *** Test Cases ***
@@ -23,15 +22,14 @@ Cenario 03 - Login com senha em branco
 Cenario 04 - Login com email inválido e senha válida
   Acessar página do projeto
   Fazer login com email inválido
-  Validar mensagem de alerta "E"
+  Validar a mensagem de alerta "E-mail e/ou senha inválidos"
 
 Cenario 05 - Login com email válido e senha inválida 
   Acessar página do projeto
   Fazer login com senha inválida
-  Validar mensagem de alerta "E"
+  Validar a mensagem de alerta "E-mail e/ou senha inválidos"
 
 Cenario 06 - Login com todos os campos em branco
     Acessar página do projeto
     Fazer login com email e senha em branco
     Validar as mensagens de erro  O email é obrigatório  A senha é obrigatória
-

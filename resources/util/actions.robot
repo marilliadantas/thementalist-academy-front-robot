@@ -33,3 +33,8 @@ clear
     [Arguments]                      ${element}
     waitElement                      ${element}        10s
     Clear Element Text               ${element}    
+    
+Validar mensagem
+    [Arguments]     ${locator}      ${texto} 
+    waitElement     ${locator}      10s
+    Element Text Should Be          ${locator}    ${texto}     
