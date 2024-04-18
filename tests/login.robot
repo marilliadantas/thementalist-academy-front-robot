@@ -4,18 +4,18 @@ Resource    ../resources/util/util.resource
 Test Setup       Abrir o navegador
 
 *** Test Cases ***
-Cenário 01 - Acessar página do projeto do Qa.Coders
+Cenario 01 - Acessar pagina do projeto do Qa.Coders
     [Documentation]    Esse teste acessa a página web do projeto
     [Tags]             acesso
     Acessar página do projeto
     Fazer login com o usuário administrador
 
-Cenário 02 - Login com email em branco
+Cenario 02 - Login com email em branco
     Acessar página do projeto
     Fazer login com e-mail em branco
     Validar mensagem de erro "O email é obrigatório"
 
-Cenário 03 - Login com senha em branco
+Cenario 03 - Login com senha em branco
     Acessar página do projeto
     Fazer login com senha em branco
     Validar mensagem de erro "A senha é obrigatória"

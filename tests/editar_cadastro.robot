@@ -12,7 +12,7 @@ Resource    ../resources/editar_cadastro.resource
 #     Editar cadastro com sucesso
 #     # Fechar o navegador
 
-Cenário 02: Cancelar a alteração do cadastro
+Cenario 02: Cancelar a alteracao do cadastro
      Abrir o navegador   
      Acessar página do projeto
      Fazer login com o usuário administrador

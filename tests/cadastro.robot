@@ -3,7 +3,7 @@ Resource    ../resources/util/util.resource
 
 *** Test Cases ***
 
-Cenário 01: Cadastrar usuário 
+Cenario 01: Cadastrar usuario 
     [Tags]             cadastro_usuario
     Abrir o navegador   
     Acessar página do projeto
