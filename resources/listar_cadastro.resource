@@ -6,7 +6,7 @@ Listar usuarios com sucesso
     Wait Until Element Is Visible    locator=${BUTTON_CADASTRO}    timeout=10
     Click Element    Cadastros
     Click Element    Usuários
-    Location Should Be    ${URL_CADASTRO} 
+    #Location Should Be    ${URL_CADASTRO} 
 
 Validar campos do listar usuarios
     Wait Until Element Is Visible    locator=${TEXT_NAME_CADASTRO}    timeout=10

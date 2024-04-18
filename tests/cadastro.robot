@@ -3,7 +3,12 @@ Resource    ../resources/util/util.resource
 Test Setup    Fechar o navegador
 
 *** Test Cases ***
+<<<<<<< HEAD
 Cenário 01: Cadastrar usuário 
+=======
+
+Cenario 01: Cadastrar usuario 
+>>>>>>> 1c60a611d8f53419a232f1deacea6907d02c9e60
     [Tags]             cadastro_usuario
     Abrir o navegador   
     Acessar página do projeto

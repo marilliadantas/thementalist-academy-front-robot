@@ -2,7 +2,7 @@
 Resource    ../resources/util/util.resource
 
 *** Test Cases ***
-Cenário 01: Listar Usuários 
+Cenario 01: Listar Usuarios 
     [Tags]    listar_usuario
     Abrir o navegador   
     Acessar página do projeto

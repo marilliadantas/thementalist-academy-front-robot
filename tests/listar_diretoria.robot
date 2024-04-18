@@ -3,7 +3,7 @@ Resource    ../resources/util/util.resource
 
 *** Test Cases ***
 
-Cenário 01: Listar Diretoria 
+Cenario 01: Listar Diretoria 
     [Tags]    listar_diretoria
     Abrir o navegador   
     Acessar página do projeto
