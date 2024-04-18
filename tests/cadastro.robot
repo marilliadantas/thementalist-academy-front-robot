@@ -16,7 +16,7 @@ Cenário 02 - Cadastrar usuário com nome completo vazio
     Acessar página do projeto
     Fazer login com o usuário administrador
     Acessar tela de cadastro
-    Cadastrar usuário com nome completo vazio
+    Cadastrar usuário com nome completo vazio 
     Validar a mensagem "O campo nome completo é obrigatório"
 
 Cenário 03 - Cadastrar usuário com email vazio
