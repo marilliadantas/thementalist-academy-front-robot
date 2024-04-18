@@ -1,5 +1,4 @@
 *** Variables ***
-# Elementos da página
 ${TEXT_LOGIN}       Login
 ${LOGIN}            //h3[contains(.,'Login')]
 ${TEXT_MAIL}        //input[contains(@type,'text')]
