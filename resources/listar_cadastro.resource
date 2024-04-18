@@ -10,4 +10,4 @@ Listar usuarios com sucesso
 
 Validar campos do listar usuarios
     Wait Until Element Is Visible    locator=${TEXT_NAME_CADASTRO}    timeout=10
-    Wait Until Element Is Visible    locator=${TEXT_EMAIL}      timeout=10
+    Wait Until Element Is Visible    locator=${TEXT_EMAIL}            timeout=10

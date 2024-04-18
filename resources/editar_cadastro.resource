@@ -12,7 +12,6 @@ Resource    ../resources/util/util.resource
 #     Input Text      locator=${FULLNAME}         text=123
 #     Click Button    locator=${BUTTON_SALVAR_ALTERACOES}
 
-
 Cancelar a alteração do cadastro com sucesso
     Wait Until Element Is Visible    locator=${BUTTON_CADASTRO}    timeout=10
     Click Element    Cadastros

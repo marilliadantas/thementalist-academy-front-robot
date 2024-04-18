@@ -1,11 +1,13 @@
 *** Variables ***
-${BUTTON_CADASTRO}     (//div[contains(.,'Cadastros')])[2]
+${BTN_CADASTRO}        id=Cadastros
+${BUTTON_USUARIOS}     id=Usuários
 ${NEW_CADASTRO}        id=Novo Cadastro
-${NAME_COMPLETO}       //label[@for='fullName'][contains(.,'Nome Completo*')]
-${BUTTON_CADASTRAR}    //button[@type='submit'][contains(.,'SALVAR NOVO')]
-${FULLNAME}            //input[contains(@name,'fullName')]           
-${MAIL_CADASTRO}                //input[contains(@name,'mail')]               
-${ACESSPROFILE}        //input[contains(@name,'accessProfile')]      
-${CPF}                 //input[contains(@name,'cpf')]                
-${PASSWORD_CADASTRO}            //input[contains(@name,'password')]           
-${CONFIRMPASSWORD}     //input[contains(@name,'confirmPassword')]
+${FULLNAME}            id=fullName          
+${MAIL_CADASTRO}       id=mail               
+${ACESSPROFILE}        id=accessProfile    
+${CPF}                 id=cpf                
+${PASSWORD_CADASTRO}   id=password          
+${CONFIRMPASSWORD}     id=confirmPassword
+${BUTTON_CADASTRAR}    id=save
+${MSG_ERRO}            css:.css-bbipig
+${MSG_ALERT}           css:.MuiAlert-message
