@@ -3,7 +3,7 @@ Resource    ../resources/util/util.resource
 
 *** Keywords ***
 Listar diretoria com sucesso
-    Wait Until Element Is Visible    locator=${BUTTON_CADASTRO}    timeout=10
+    Wait Until Element Is Visible    locator=${BTN_CADASTRO}    timeout=10
     Click Element    Cadastros
     Click Element    Diretorias
     #Location Should Be    ${URL_DIRETORIA}

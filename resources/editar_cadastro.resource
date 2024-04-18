@@ -13,7 +13,7 @@ Resource    ../resources/util/util.resource
 #     Click Button    locator=${BUTTON_SALVAR_ALTERACOES}
 
 Cancelar a alteração do cadastro com sucesso
-    Wait Until Element Is Visible    locator=${BUTTON_CADASTRO}    timeout=10
+    Wait Until Element Is Visible    locator=${BTN_CADASTRO}    timeout=10
     Click Element    Cadastros
     Click Element    Usuários
     Wait Until Element Is Visible    locator=${NEW_CADASTRO}
