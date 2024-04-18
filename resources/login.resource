@@ -1,7 +1,6 @@
 *** Settings ***
 Resource    ../resources/util/util.resource
 
-
 *** Keywords ***
 Abrir o navegador
     Open Browser    browser=${BROWSER}
