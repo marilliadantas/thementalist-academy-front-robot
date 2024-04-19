@@ -11,7 +11,7 @@ getTextIndex
 
 waitElement
     [Arguments]                      ${elements}       ${time}
-    Wait Until Element Is Visible    ${elements}       ${time}
+    Wait Until Element Is Enabled    ${elements}       ${time}
 
 Preencher
     [Arguments]    ${locator}       ${variavel}    
@@ -21,7 +21,7 @@ Preencher
 Clicar
     [Arguments]                      ${element}
     waitElement                      ${element}       10s
-    Click Element                    ${element}
+    Click Button                     ${element}
 
 clicarTexto
     [Arguments]                      ${element}        ${text}

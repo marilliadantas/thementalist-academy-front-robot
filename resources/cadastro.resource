@@ -4,12 +4,17 @@ Resource    data/variaveis_cadastro.resource
 
 *** Keywords ***
 Acessar tela de cadastro
+    Sleep    3s
     waitElement                                ${BTN_CADASTRO}     10s
     Click Element                              ${BTN_CADASTRO} 
-    Clicar                                     ${BUTTON_USUARIOS}            
+
+    waitElement                                ${BTN_USUARIOS}     10s
+    Click Element                              ${BTN_USUARIOS}      
+
+    waitElement                                ${NEW_CADASTRO}     10s      
     Clicar                                     ${NEW_CADASTRO}        
     
-    Wait Until Element Is Enabled              ${FULLNAME}
+    Wait Until Element Is Visible              ${FULLNAME}
     Wait Until Page Contains                   Novo Cadastro
     
 Cadastrar usuário com sucesso 
@@ -88,7 +93,7 @@ Cadastrar usuário com senha vazio
     Preencher          ${MAIL_CADASTRO}         ${USERNAME}@qacoders.com.br
     Preencher          ${ACESSPROFILE}          ADMIN
     Preencher          ${CPF}                   ${CPF_FAKE} 
-    Limpar campo       ${PASSWORD_CADASTRO}      
+    Limpar campo       ${PASSWORD_CADASTRO}     
     Preencher          ${CONFIRMPASSWORD}       Qa#12336
     Clicar             ${BUTTON_CADASTRAR}
 
