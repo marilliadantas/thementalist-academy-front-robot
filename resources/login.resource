@@ -37,9 +37,9 @@ Fazer login com email inválido
     Clicar          ${BUTTON_ENTRAR}
 
 Fazer login com senha inválida
-    preencher       ${TEXT_MAIL}        ${MAIL}
-    preencher       ${TEXT_PASSWORD}    1234Test
-    clicar          ${BUTTON_ENTRAR}
+    Preencher       ${TEXT_MAIL}        ${MAIL}
+    Preencher       ${TEXT_PASSWORD}    1234Test
+    Clicar          ${BUTTON_ENTRAR}
 
 Validar mensagem de erro "${erroEsperado}"
     ${text}        getText        ${ERROR_REQUIRED}
