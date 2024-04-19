@@ -34,3 +34,7 @@ Cenario 06 - Login com todos os campos em branco
     Fazer login com email em formato inválida
     Validar mensagem de erro "Digite um email válido"
     
+Cenario 07 - Login com email em formato invalido
+    Acessar página do projeto
+    Fazer login com email em formato inválida
+    Validar mensagem de erro "Digite um email válido"
