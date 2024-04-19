@@ -2,10 +2,6 @@
 Resource    ../resources/util/util.resource
 
 *** Keywords ***
-Abrir o navegador
-    Open Browser    browser=${BROWSER}
-    Maximize Browser Window
-
 Acessar página do projeto
     Go To   ${URL}
     Wait Until Element Is Visible    locator=${LOGIN}
@@ -59,6 +55,3 @@ Validar as mensagens de erro
 
 Validar a mensagem de alerta "${alertaEsperado}"
     Validar mensagem    ${ALERT_ERROR}    ${alertaEsperado}
-
-Fechar o navegador
-    Close Browser
