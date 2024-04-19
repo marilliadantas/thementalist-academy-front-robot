@@ -3,12 +3,7 @@ Resource    ../resources/util/util.resource
 Test Setup    Fechar o navegador
 
 *** Test Cases ***
-<<<<<<< HEAD
 Cenário 01: Cadastrar usuário 
-=======
-
-Cenario 01: Cadastrar usuario 
->>>>>>> 1c60a611d8f53419a232f1deacea6907d02c9e60
     [Tags]             cadastro_usuario
     Abrir o navegador   
     Acessar página do projeto
@@ -21,7 +16,7 @@ Cenário 02 - Cadastrar usuário com nome completo vazio
     Acessar página do projeto
     Fazer login com o usuário administrador
     Acessar tela de cadastro
-    Cadastrar usuário com nome completo vazio
+    Cadastrar usuário com nome completo vazio 
     Validar a mensagem "O campo nome completo é obrigatório"
 
 Cenário 03 - Cadastrar usuário com email vazio
