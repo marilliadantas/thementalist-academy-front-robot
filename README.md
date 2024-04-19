@@ -1,20 +1,19 @@
 <h1 align="center">Projeto de Frontend com o Robot Framework</h1>
-<p align="center">Teste de Frontend do Grupo Mentalist</p>
 
-### ⚠️ Status do Projeto ⚠️
+### ⚠️ Status do Projeto 
 
 <h4 align="center"> 
 	🚧  React Select 🚀 Em construção...  🚧
 </h4>
 
 ### 📑 Tabela de Conteúdos
-   * [Tecnologias](#tecnologias)
+   * [Sobre o projeto](#🎯-sobre-o-projeto)
    * [Linguagem de Programação utilizada](#🔗-linguagem-de-programação-utilizada)
-   * [Preparando o ambiente](#preparando-o-ambiente)
-   * [Library Recomendadas](#library-recomendadas)
+   * [Preparando o ambiente](#💻-preparando-o-ambiente)
+   * [Library Recomendadas](#📚-library-recomendadas)
   
 ### 🎯 Sobre o projeto 
-<p align="center"> Esse projeto faz parte do Academy do Qa.Coders, onde estamos testando o site Web https://automacao.qacoders-academy.com.br/. 
+<p> Esse projeto foi proposto pelo Academy da instuituição Qa.Coders. O nosso objetivo nesse projeto, é encontrar melhorias e inconsitências e além de tudo, aprender novas tecnologias e trabalhar em equipe. O site Web que estamos testando pode ser acessado através do link: https://automacao.qacoders-academy.com.br/. 
 
 ### 🔗 Linguagem de Programação utilizada
 As seguintes ferramentas foram usadas na construção do projeto:
