@@ -9,8 +9,10 @@ Resource  ../data/elementos_diretoria.resource
 Resource  ../data/elementos_listar_diretoria.resource
 Resource  ../data/elementos_editar_cadastro.resource
 Resource  ../data/elementos_listar_cadastro.resource
+
 #Variables
 Resource    ../data/variaveis_login.resource
+Resource    ../data/variaveis_cadastro.resource
 Resource    ../util/actions.robot
 
 #Pastas com as Keywords

@@ -13,12 +13,12 @@ waitElement
     [Arguments]                      ${elements}       ${time}
     Wait Until Element Is Visible    ${elements}       ${time}
 
-preencher
+Preencher
     [Arguments]    ${locator}       ${variavel}    
     waitElement                     ${locator}        10s
     Input Text     ${locator}       ${variavel}
 
-clicar
+Clicar
     [Arguments]                      ${element}
     waitElement                      ${element}       10s
     Click Element                    ${element}
@@ -29,7 +29,7 @@ clicarTexto
     ${text}                          Get Text          ${element}
     Click Element                    ${element}     
 
-clear
+Limpar campo
     [Arguments]                      ${element}
     waitElement                      ${element}        10s
     Clear Element Text               ${element}    

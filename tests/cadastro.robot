@@ -51,7 +51,7 @@ Cenário 06 - Cadastrar usuário com cpf com 12 caracteres
     Cadastrar usuário com cpf de 12 digitos
     Validar o alerta "Deve preencher o CPF com 11 dígitos"
 
-Cenário 08 - Cadastrar usuário com senha vazio
+Cenário 07 - Cadastrar usuário com senha vazio
     Abrir o navegador   
     Acessar página do projeto
     Fazer login com o usuário administrador
@@ -59,7 +59,7 @@ Cenário 08 - Cadastrar usuário com senha vazio
     Cadastrar usuário com senha vazio
     Validar o alerta "O campo senha é obrigatório"
 
-Cenário 09 - Cadastrar usuário com confirmar senha vazio
+Cenário 08 - Cadastrar usuário com confirmar senha vazio
     Abrir o navegador   
     Acessar página do projeto
     Fazer login com o usuário administrador
@@ -67,7 +67,7 @@ Cenário 09 - Cadastrar usuário com confirmar senha vazio
     Cadastrar usuário com confirmar senha vazio
     Validar o alerta "O campo de confirmação de senha é obrigatório."
 
-Cenário 10 - Cadastrar usuário com senhas diferentes
+Cenário 09 - Cadastrar usuário com senhas diferentes
     Abrir o navegador   
     Acessar página do projeto
     Fazer login com o usuário administrador
@@ -75,7 +75,7 @@ Cenário 10 - Cadastrar usuário com senhas diferentes
     Cadastrar usuário com senhas diferentes
     Validar o alerta "As senhas não conferem."
 
-Cenário 11 - Cadastrar usuário com todos os campos vazios
+Cenário 10 - Cadastrar usuário com todos os campos vazios
     Abrir o navegador   
     Acessar página do projeto
     Fazer login com o usuário administrador

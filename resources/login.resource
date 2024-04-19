@@ -12,14 +12,13 @@ Acessar página do projeto
     Wait Until Page Contains         text=${TEXT_LOGIN}
 
 Fazer login com o usuário administrador
-    Input Text      locator=${TEXT_MAIL}        text=${MAIL}
-    Input Text      locator=${TEXT_PASSWORD}    text=${PASSWORD}
-    Click Button    locator=${BUTTON_ENTRAR}
-
+    Preencher      ${TEXT_MAIL}        ${MAIL}
+    Preencher      ${TEXT_PASSWORD}    ${PASSWORD}
+    Clicar         ${BUTTON_ENTRAR}
 
 Fazer login com e-mail em branco
-    Input Text      locator=${TEXT_MAIL}        text=
-    Input Text      locator=${TEXT_PASSWORD}    text=${PASSWORD}
+    Input Text      ${TEXT_MAIL}        text=
+    Input Text      ${TEXT_PASSWORD}    text=${PASSWORD}
     Click Button    locator=${BUTTON_ENTRAR}
 
 Fazer login com senha em branco
@@ -33,9 +32,9 @@ Fazer login com email e senha em branco
     Click Button    locator=${BUTTON_ENTRAR}
 
 Fazer login com email inválido
-    preencher       ${TEXT_MAIL}        emailinvalido@qacoders.com
-    preencher       ${TEXT_PASSWORD}    ${PASSWORD}
-    clicar          ${BUTTON_ENTRAR}
+    Preencher       ${TEXT_MAIL}        emailinvalido@qacoders.com
+    Preencher       ${TEXT_PASSWORD}    ${PASSWORD}
+    Clicar          ${BUTTON_ENTRAR}
 
 Fazer login com senha inválida
     preencher       ${TEXT_MAIL}        ${MAIL}
