@@ -1,6 +1,6 @@
 *** Variables ***
 ${BTN_CADASTRO}        id=Cadastros
-${BUTTON_USUARIOS}     id=Usuários
+${BTN_USUARIOS}        id=Usuários
 ${NEW_CADASTRO}        id=Novo Cadastro
 ${FULLNAME}            id=fullName          
 ${MAIL_CADASTRO}       id=mail               

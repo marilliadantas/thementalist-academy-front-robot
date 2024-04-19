@@ -2,10 +2,6 @@
 Resource    ../resources/util/util.resource
 
 *** Keywords ***
-Abrir o navegador
-    Open Browser    browser=${BROWSER}
-    Maximize Browser Window
-
 Acessar página do projeto
     Go To   ${URL}
     Wait Until Element Is Visible    locator=${LOGIN}
@@ -14,6 +10,7 @@ Acessar página do projeto
 Fazer login com o usuário administrador
     Preencher      ${TEXT_MAIL}        ${MAIL}
     Preencher      ${TEXT_PASSWORD}    ${PASSWORD}
+    Wait Until Element Is Enabled      ${BUTTON_ENTRAR}    10s
     Clicar         ${BUTTON_ENTRAR}
 
 Fazer login com e-mail em branco
@@ -54,6 +51,3 @@ Validar as mensagens de erro
 
 Validar a mensagem de alerta "${alertaEsperado}"
     Validar mensagem    ${ALERT_ERROR}    ${alertaEsperado}
-
-Fechar o navegador
-    Close Browser
