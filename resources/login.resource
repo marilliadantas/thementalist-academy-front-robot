@@ -31,14 +31,19 @@ Fazer login com email e senha em branco
     Input Text      locator=${TEXT_PASSWORD}    text=
     Click Button    locator=${BUTTON_ENTRAR}
 
-Fazer login com email inválido
-    Preencher       ${TEXT_MAIL}        emailinvalido@qacoders.com
+Fazer login com email inexistente
+    Preencher       ${TEXT_MAIL}        emailinexistente@qacoders.com
     Preencher       ${TEXT_PASSWORD}    ${PASSWORD}
     Clicar          ${BUTTON_ENTRAR}
 
 Fazer login com senha inválida
     Preencher       ${TEXT_MAIL}        ${MAIL}
     Preencher       ${TEXT_PASSWORD}    1234Test
+    Clicar          ${BUTTON_ENTRAR}
+
+Fazer login com email em formato inválida
+    Preencher     ${TEXT_MAIL}     emailinvalidoqacoders.com
+    Preencher       ${TEXT_PASSWORD}    ${PASSWORD}
     Clicar          ${BUTTON_ENTRAR}
 
 Validar mensagem de erro "${erroEsperado}"
