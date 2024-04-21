@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    FakerLibrary
+Library    FakerLibrary    locale=pt_BR
 
 #Pastas referentes aos elementos da página
 Resource  ../data/elementos_cadastro.resource
@@ -12,6 +12,7 @@ Resource  ../data/elementos_listar_cadastro.resource
 
 #Variables
 Resource    ../data/variaveis_login.resource
+Resource    ../data/variaveis_diretoria.resource
 Resource    ../data/variaveis_cadastro.resource
 Resource    ../util/actions.robot
 Resource    ../util/setup.robot
@@ -23,3 +24,4 @@ Resource    ../diretoria.resource
 Resource    ../listar_diretoria.resource
 Resource    ../editar_cadastro.resource
 Resource    ../listar_cadastro.resource
+

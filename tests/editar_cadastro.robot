@@ -10,7 +10,6 @@ Test Teardown     Fechar o navegador
 #     Acessar página do projeto
 #     Fazer login com o usuário administrador
 #     Editar cadastro com sucesso
-#     # Fechar o navegador
 
 Cenario 02: Cancelar a alteracao do cadastro
      Acessar página do projeto

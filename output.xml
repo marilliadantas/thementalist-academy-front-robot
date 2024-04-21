@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-20T21:06:20.053282" rpa="false" schemaversion="5">
+<suite id="s1" name="Listar Cadastro" source="c:\Users\leticia.silva\Documents\GitHub\robot-front-academy\tests\listar_cadastro.robot">
+<test id="s1-t1" name="Cenario 01: Listar Usuarios" line="7">
+<kw name="Abrir o navegador" owner="setup" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:21.397371" level="INFO">Opening browser 'headlesschrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-20T21:06:21.397371" elapsed="1.833870"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-20T21:06:23.231241" elapsed="0.134381"/>
+</kw>
+<status status="PASS" start="2024-04-20T21:06:21.393831" elapsed="1.971791"/>
+</kw>
+<kw name="Acessar página do projeto" owner="login">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:23.367618" level="INFO">Opening url 'https://automacao.qacoders-academy.com.br/login'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-20T21:06:23.367618" elapsed="1.933532"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.301150" elapsed="0.262899"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${TEXT_LOGIN}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.564049" elapsed="0.016441"/>
+</kw>
+<status status="PASS" start="2024-04-20T21:06:23.366618" elapsed="2.213872"/>
+</kw>
+<kw name="Fazer login com o usuário administrador" owner="login">
+<kw name="Preencher" owner="actions">
+<kw name="waitElement" owner="actions">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${elements}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.601358" elapsed="0.057781"/>
+</kw>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<status status="PASS" start="2024-04-20T21:06:25.600361" elapsed="0.058778"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:25.660136" level="INFO">Typing text 'sysadmin@qacoders.com' into text field '//input[contains(@type,'text')]'.</msg>
+<arg>${locator}</arg>
+<arg>${variavel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.659139" elapsed="0.174963"/>
+</kw>
+<arg>${TEXT_MAIL}</arg>
+<arg>${MAIL}</arg>
+<status status="PASS" start="2024-04-20T21:06:25.597440" elapsed="0.236662"/>
+</kw>
+<kw name="Preencher" owner="actions">
+<kw name="waitElement" owner="actions">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${elements}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.834102" elapsed="0.032156"/>
+</kw>
+<arg>${locator}</arg>
+<arg>10s</arg>
+<status status="PASS" start="2024-04-20T21:06:25.834102" elapsed="0.032156"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:25.866258" level="INFO">Typing text '1234@Test' into text field '//input[contains(@type,'password')]'.</msg>
+<arg>${locator}</arg>
+<arg>${variavel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.866258" elapsed="0.096896"/>
+</kw>
+<arg>${TEXT_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-04-20T21:06:25.834102" elapsed="0.129052"/>
+</kw>
+<kw name="Clicar" owner="actions">
+<kw name="waitElement" owner="actions">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${elements}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.965015" elapsed="0.015545"/>
+</kw>
+<arg>${element}</arg>
+<arg>10s</arg>
+<status status="PASS" start="2024-04-20T21:06:25.965015" elapsed="0.015545"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:25.980560" level="INFO">Clicking button '//button[contains(@type,'submit')]'.</msg>
+<arg>${element}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T21:06:25.980560" elapsed="0.083920"/>
+</kw>
+<arg>${BUTTON_ENTRAR}</arg>
+<status status="PASS" start="2024-04-20T21:06:25.964153" elapsed="0.100327"/>
+</kw>
+<status status="PASS" start="2024-04-20T21:06:25.596558" elapsed="0.467922"/>
+</kw>
+<kw name="Listar usuarios com sucesso" owner="listar_cadastro">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BTN_CADASTRO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T21:06:26.064480" elapsed="0.449380"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:26.513860" level="INFO">Clicking element 'Cadastros'.</msg>
+<arg>Cadastros</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T21:06:26.513860" elapsed="0.072661"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:26.586521" level="INFO">Clicking element 'Usuários'.</msg>
+<arg>Usuários</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T21:06:26.586521" elapsed="0.082349"/>
+</kw>
+<status status="PASS" start="2024-04-20T21:06:26.064480" elapsed="0.604390"/>
+</kw>
+<kw name="Validar campos do listar usuarios" owner="listar_cadastro">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TEXT_NAME_CADASTRO}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T21:06:26.671863" elapsed="0.491921"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TEXT_EMAIL}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T21:06:27.163784" elapsed="0.016638"/>
+</kw>
+<status status="PASS" start="2024-04-20T21:06:26.670867" elapsed="0.509555"/>
+</kw>
+<kw name="Validar quantos registros estão cadastrados por página" owner="listar_cadastro">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T21:06:47.547031" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T21:06:47.547031" level="FAIL">Element '//ul[contains(.,'1-30 de 532')]' did not appear in 20 seconds.</msg>
+<arg>${PAGE2}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2024-04-20T21:06:27.180422" elapsed="20.382564">Element '//ul[contains(.,'1-30 de 532')]' did not appear in 20 seconds.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${PAGE2}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-04-20T21:06:47.562986" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${ul_number}</var>
+<arg>${PAGE2}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-20T21:06:47.562986" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${ul_number}</arg>
+<arg>50</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2024-04-20T21:06:47.562986" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-20T21:06:27.180422" elapsed="20.382564">Element '//ul[contains(.,'1-30 de 532')]' did not appear in 20 seconds.</status>
+</kw>
+<kw name="Fechar o navegador" owner="setup" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-20T21:06:47.562986" elapsed="2.249988"/>
+</kw>
+<status status="PASS" start="2024-04-20T21:06:47.562986" elapsed="2.249988"/>
+</kw>
+<tag>listar_usuario</tag>
+<status status="FAIL" start="2024-04-20T21:06:21.380822" elapsed="28.432152">Element '//ul[contains(.,'1-30 de 532')]' did not appear in 20 seconds.</status>
+</test>
+<status status="FAIL" start="2024-04-20T21:06:20.061261" elapsed="29.751713"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">listar_usuario</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Listar Cadastro">Listar Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-20T21:06:21.296740" level="WARN">Error in file 'c:\Users\leticia.silva\Documents\GitHub\robot-front-academy\resources\util\actions.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>
