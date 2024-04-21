@@ -16,6 +16,8 @@ Cenario 02: Validar campos do Listar Diretoria
     Validar campos do listar diretoria
 
 Cenario 03: Validar campos do Listar Diretoria
+# Esse teste deve falhar pois na regra de negócio é 20 registros por página
     Acessar página do projeto
     Fazer login com o usuário administrador
+    Listar diretoria com sucesso
     Validar quantos registros estão cadastrados por página da Lista de Diretoria

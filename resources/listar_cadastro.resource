@@ -16,4 +16,5 @@ Validar quantos registros estão cadastrados por página
     Element Should Be Visible           ${PAGE2}
     ${ul_number}    Get Text            ${PAGE2}
     Should Contain                      ${ul_number}            50
+    Sleep    20s
   

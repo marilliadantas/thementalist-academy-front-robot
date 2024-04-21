@@ -8,11 +8,11 @@ Listar diretoria com sucesso
     Click Element    Diretorias
 
 Validar campos do listar diretoria
-    Wait Until Element Is Visible    ${TEXT_NAME_DIRETORIA}    10s
-    Wait Until Element Is Visible    ${TEXT_ID_DIRETORIA}      10s
+    Should Contain    ${TEXT_NAME_DIRETORIA}    Nome da Diretoria        
+    Should Contain    ${TEXT_ID_DIRETORIA}      Codigo da Diretoria 
 
 Validar quantos registros estão cadastrados por página da Lista de Diretoria
-    Wait Until Page Contains Element    ${PAGE2}                20s
-    Element Should Be Visible           ${PAGE2}
-    ${ul_number}    Get Text            ${PAGE2}
-    Should Contain                      ${ul_number}            20s
+    Wait Until Page Contains Element    ${PAGE}                20s
+    Element Should Be Visible           ${PAGE}
+    ${ul_number}    Get Text            ${PAGE}
+    Should Contain                      ${ul_number}            20
