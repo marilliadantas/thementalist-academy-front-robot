@@ -29,3 +29,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### 📚 Library Recomendadas
 - [SeleniumLibrary]
 - [FakerLibrary]
+
+# Autores do projeto
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/marilliadantas/"><img src="https://avatars.githubusercontent.com/u/105676314?v=4" width="100px;" alt="Marillia Dantas"/><br /><sub><b>Marillia Dantas</b></sub></a><br /><a href="https://github.com/marilliadantas"</td><td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/amandaoliveira--/"><img src="https://avatars.githubusercontent.com/u/73588768?v=4" width="100px;" alt="Amanda Oliveira"/><br /><sub><b>Amanda Oliveira</b></sub></a><br /><a href="https://github.com/Amandatec"</td><td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/jeieljacques/"><img src="https://avatars.githubusercontent.com/u/133384467?v=4" width="100px;" alt="Jeiel Jacques"/><br /><sub><b>Jeiel Jacques</b></sub></a><br /><a href="https://github.com/JeielJacques"</td> <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/aleticia-da-silva/"><img src="https://avatars.githubusercontent.com/u/61994404?v=4" width="100px;" alt="Leticia da Silva"/><br /><sub><b>Letícia da Silva</b></sub></a><br /><a href="https://github.com/ALeticiadaSilva"</td>
