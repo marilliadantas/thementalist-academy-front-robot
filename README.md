@@ -52,6 +52,13 @@ robot -d results web/tests/nome_do_arquivo.robot
 <table>
   <tbody>
     <tr>
+	  <td align="center" valign="top" width="14.28%">
+        <a href="https://www.linkedin.com/in/amandaoliveira--/" target="_blank"><img src="https://avatars.githubusercontent.com/u/73588768?v=4" width="100px;" alt="Amanda Oliveira"/></a><br />
+        <sub><b><a href="https://github.com/Amandatec" target="_blank">Amanda Oliveira</a></b></sub><br />
+    </td>
+	  <td align="center" valign="top" width="14.28%">
+        <a href="https://www.linkedin.com/in/jeieljacques/" target="_blank"><img src="https://avatars.githubusercontent.com/u/133384467?v=4" width="100px;" alt="Jeiel Jacques"/></a><br />
+        <sub><b><a href="https://github.com/JeielJacques" target="_blank">Jeiel Jacques</a></b></sub><br />
       <td align="center" valign="top" width="14.28%">
         <a href="https://www.linkedin.com/in/aleticia-da-silva/" target="_blank"><img src="https://avatars.githubusercontent.com/u/61994404?v=4" width="100px;" alt="Letícia da Silva"/></a><br />
         <sub><b><a href="https://github.com/ALeticiadaSilva" target="_blank">Letícia da Silva</a></b></sub><br />
@@ -60,13 +67,9 @@ robot -d results web/tests/nome_do_arquivo.robot
         <a href="https://www.linkedin.com/in/marilliadantas/" target="_blank"><img src="https://avatars.githubusercontent.com/u/105676314?v=4" width="100px;" alt="Marillia Dantas"/></a><br />
         <sub><b><a href="https://github.com/marilliadantas" target="_blank">Marillia Dantas</a></b></sub><br />
       </td>
-      <td align="center" valign="top" width="14.28%">
-        <a href="https://www.linkedin.com/in/amandaoliveira--/" target="_blank"><img src="https://avatars.githubusercontent.com/u/73588768?v=4" width="100px;" alt="Amanda Oliveira"/></a><br />
-        <sub><b><a href="https://github.com/Amandatec" target="_blank">Amanda Oliveira</a></b></sub><br />
-      </td>
-      <td align="center" valign="top" width="14.28%">
-        <a href="https://www.linkedin.com/in/jeieljacques/" target="_blank"><img src="https://avatars.githubusercontent.com/u/133384467?v=4" width="100px;" alt="Jeiel Jacques"/></a><br />
-        <sub><b><a href="https://github.com/JeielJacques" target="_blank">Jeiel Jacques</a></b></sub><br />
+	  <td align="center" valign="top" width="14.28%">
+        <a href="https://www.linkedin.com/in/wladimirllima/" target="_blank"><img src="https://avatars.githubusercontent.com/u/81488080?v=4" width="100px;" alt="Wladimir Lima"/></a><br />
+        <sub><b><a href="https://github.com/wladimirlima" target="_blank">Wladimir Lima</a></b></sub><br />
       </td>
     </tr>
   </tbody>
