@@ -45,7 +45,7 @@ pip install robotframework-faker
 ### ✔️ Executando os Testes
 Execute os testes com o seguinte comando, substituindo `nome_do_arquivo.robot` pelo nome do arquivo que contém seus casos de teste.
 ```bash
-robot nome_do_arquivo.robot
+robot -d results web/tests/nome_do_arquivo.robot
 ```
 
 # 👥 Autores do projeto
