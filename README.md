@@ -14,18 +14,19 @@
   
 ### 🎯 Sobre o projeto 
 Esse projeto foi proposto pelo Academy da instuituição Qa.Coders. O nosso objetivo nesse projeto, é encontrar melhorias e inconsitências e além de tudo, aprender novas tecnologias e trabalhar em equipe. O site Web que estamos testando pode ser acessado através do link: [Qa.Coders Academy](https://automacao.qacoders-academy.com.br/)
+<<<<<<< HEAD
  
+=======
+>>>>>>> 80ee2f7ca82eacb05acc69b7b6cd119f4291ea3d
 
 ### 🔗 Linguagem de Programação utilizada
 As seguintes ferramentas foram usadas na construção do projeto:
 - [Python] (<https://www.python.org/>)
 
-
 ### 💻 Preparando o ambiente 
 - [Robot Framework] (<https://robotframework.org/>)
 - [WebDriver] (<https://chromedriver.chromium.org/downloads>)
 - [Extensão TruePath] (<https://chromewebstore.google.com/detail/truepath/mgjhkhhbkkldiihlajcnlfchfcmhipmn?pli=1>)
-
 
 ### 📚 Library Recomendadas
 - [SeleniumLibrary]
