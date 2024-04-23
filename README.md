@@ -13,7 +13,8 @@
    * [Library Recomendadas](#📚-library-recomendadas)
   
 ### 🎯 Sobre o projeto 
-<p> Esse projeto foi proposto pelo Academy da instuituição Qa.Coders. O nosso objetivo nesse projeto, é encontrar melhorias e inconsitências e além de tudo, aprender novas tecnologias e trabalhar em equipe. O site Web que estamos testando pode ser acessado através do link: https://automacao.qacoders-academy.com.br/. 
+Esse projeto foi proposto pelo Academy da instuituição Qa.Coders. O nosso objetivo nesse projeto, é encontrar melhorias e inconsitências e além de tudo, aprender novas tecnologias e trabalhar em equipe. O site Web que estamos testando pode ser acessado através do link: [Qa.Coders Academy](https://automacao.qacoders-academy.com.br/)
+ 
 
 ### 🔗 Linguagem de Programação utilizada
 As seguintes ferramentas foram usadas na construção do projeto:
