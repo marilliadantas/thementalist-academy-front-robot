@@ -83,9 +83,6 @@ robot -d results web/tests/nome_do_arquivo.robot
         <a href="https://www.linkedin.com/in/wladimirllima/" target="_blank"><img src="https://media.licdn.com/dms/image/D4D03AQGfwpMaLXnXMQ/profile-displayphoto-shrink_800_800/0/1712689356688?e=1719446400&v=beta&t=ZTwGIAIcV2wUSJzqGTRcBIHbOcI5zzTefvuQ3k7fJ-M" width="150px;" alt="Wladimir Lima"/></a><br/>
         <sub><b><a href="https://github.com/wladimirlima" target="_blank">Wladimir Lima</a></b></sub><br/>
       </td>
-	    <td align="center" valign="top" width="14.28%">
-        <a href="https://www.linkedin.com/in/mariana-ramos-7ab07633/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="https://media.licdn.com/dms/image/C4E03AQFzmZaagWcFhg/profile-displayphoto-shrink_800_800/0/1600559198533?e=1719446400&v=beta&t=CRnV7JMtUtydD3MC5GqGIVZbtsSKPM1q0AJHTxBksgw" width="100px;" alt="Mariana Ramos"/></a><br />
-        <sub><b><a href="https://www.linkedin.com/in/mariana-ramos-7ab07633/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Mariana Ramos</a></b></sub><br />
     </tr>
   </tbody>
 </table>
