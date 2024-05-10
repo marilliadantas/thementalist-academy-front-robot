@@ -65,7 +65,7 @@ jobs:
 
       - name: Merge Reports
         run: |
-          rebot --merge results/robot-framework-report-api/output.xml results/robot-framework-report-web/output.xml
+          rebot --merge results/robot-framework-report-web/output.xml
           ls -a
 
       - name: Upload Merge Report
