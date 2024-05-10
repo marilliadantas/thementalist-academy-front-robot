@@ -2,19 +2,20 @@ name: Robot Framework Tests
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
+
   workflow_dispatch:
 
-jobs:
+jobs:  
   test_web:
     name: Web Tests
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -23,17 +24,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          echo "Installing project dependencies"
+          echo Instalação das depedências do Projeto
           pip install robotframework-seleniumlibrary
           pip install robotframework-faker
-          pip install robotframework
           pip install setuptools
 
       - name: Run Robot Framework tests
         run: |
-          echo "Running Robot Framework front-end tests"
-          robot -d results web/tests || true
-
+          echo Executando os testes de FRONT do Robot
+          robot --name "Web Tests" --outputdir results/ web/tests || true
+      
       - name: Test Report
         uses: actions/upload-artifact@v4
         if: always()
@@ -53,15 +53,19 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install dependencies
+        run: |
+          echo Instalação das depedências do Projeto
+          pip install robotframework
+
       - name: Download Artifacts
         uses: actions/download-artifact@v4
-        with:
-          name: robot-framework-report-web
+        with: 
           path: results/
 
       - name: Merge Reports
         run: |
-          rebot --merge results/*.xml -o merged_report.html
+          rebot --merge results/robot-framework-report-api/output.xml results/robot-framework-report-web/output.xml
           ls -a
 
       - name: Upload Merge Report
@@ -69,12 +73,12 @@ jobs:
         if: always()
         with:
           name: robot-framework-report
-          path: merged_report.html
+          path: ./*.html
 
   deploy:
     name: Deploy GitHub Pages 🌐
     runs-on: ubuntu-latest
-    needs:
+    needs: 
       - merge
     permissions:
       contents: read
@@ -82,18 +86,21 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: https://marilliadantas.github.io/robot-qacoders/report.html
+      url: https://marilliadantas.github.io/thementalist-academy-front-robot/report.html
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Download Merge Report
+      - name: Download Artifacts
         uses: actions/download-artifact@v4
-        with:
+        with: 
           name: robot-framework-report
 
-      - name: Deploy to GitHub Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
+      - name: Deploy to Github Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact-path: merged_report.html
