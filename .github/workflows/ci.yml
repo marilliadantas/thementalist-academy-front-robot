@@ -8,32 +8,26 @@ on:
 
   workflow_dispatch:
 
-jobs:  
+jobs:
   test_web:
     name: Web Tests
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+        uses: actions/checkout@v3
 
       - name: Install dependencies
         run: |
-          echo Instalação das depedências do Projeto
-          pip install robotframework-seleniumlibrary
-          pip install robotframework-faker
           pip install setuptools
+          pip install robotframework
+          pip install robotframework-seleniumlibrary
+          pip install robotframework-faker 
 
-      - name: Run Robot Framework tests
+      - name: Run Test
         run: |
-          echo Executando os testes de FRONT do Robot
-          robot --name "Web Tests" -d results web/tests || true
-      
+          robot -d results web/tests || true
+
       - name: Test Report
         uses: actions/upload-artifact@v4
         if: always()
@@ -54,7 +48,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          echo Instalação das depedências do Projeto
+          echo Instalação das dependências do Projeto
           pip install robotframework
 
       - name: Download Artifacts
