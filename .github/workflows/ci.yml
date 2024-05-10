@@ -65,7 +65,7 @@ jobs:
 
       - name: Merge Reports
         run: |
-          rebot --merge /home/runner/work/thementalist-academy-front-robot/thementalist-academy-front-robot/results/output.xml
+          rebot --merge results/robot-framework-report-web/output.xml
           ls -a
 
       - name: Upload Merge Report
