@@ -25,6 +25,7 @@ jobs:
         run: |
           echo "Installing project dependencies"
           pip install robotframework-seleniumlibrary
+          pip install robotframework-faker
           pip install robotframework
           pip install setuptools
 
