@@ -32,7 +32,7 @@ jobs:
       - name: Run Robot Framework tests
         run: |
           echo Executando os testes de FRONT do Robot
-          robot --name "Web Tests" --outputdir results/ web/tests || true
+          robot --name "Web Tests" results web/tests || true
       
       - name: Test Report
         uses: actions/upload-artifact@v4
@@ -46,7 +46,6 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - test_web
-
     steps:
       - name: Set up Python
         uses: actions/setup-python@v5
