@@ -1,12 +1,30 @@
 *** Settings ***
 Resource    ../resources/util/util.resource
+Library     Collections
 
 *** Keywords ***
 Listar diretoria com sucesso
     Wait Until Element Is Visible    locator=${BTN_CADASTRO}    timeout=10
-    Click Element    Cadastros
-    Click Element    Diretorias
+    Click Element    ${BTN_CADASTRO}
+    Wait Until Element Is Visible    locator=${BTN_DIRETORIAS} 
+    Click Element    ${BTN_DIRETORIAS} 
 
 Validar campos do listar diretoria
     Wait Until Element Is Visible    locator=${TEXT_NAME_DIRETORIA}    timeout=10
     Wait Until Element Is Visible    locator=${TEXT_ID_DIRETORIA}      timeout=10
+
+Validar quantidade de registros
+  Wait Until Element Is Visible    ${LISTA_DIRETORIA}     10s
+  ${quantidade_li}=  Get Element Count     ${LISTA_DIRETORIA} 
+  Should Be True    ${quantidade_li} <= 20
+
+Validar a ordem alfabetica
+  Wait Until Element Is Visible    ${LISTA_DIRETORIA}     10s
+  @{lista}    Get WebElements   ${LISTA_DIRETORIA}/p
+  @{lista_texto}    Create List
+  FOR    ${element}    IN    @{lista}
+    ${texto}  Get Text    ${element}
+    Append To List    ${lista_texto}    ${texto}      
+  END    
+  @{lista_ordenada}    Evaluate    sorted(@{lista_texto}, key=str.casefold)
+   Lists Should Be Equal    ${lista_texto}   ${lista_ordenada}
