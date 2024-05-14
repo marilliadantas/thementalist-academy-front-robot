@@ -4,10 +4,12 @@ Library     Collections
 
 *** Keywords ***
 Listar diretoria com sucesso
+    Sleep    2s 
     Wait Until Element Is Visible    locator=${BTN_CADASTRO}    timeout=10
     Click Element    ${BTN_CADASTRO}
     Wait Until Element Is Visible    locator=${BTN_DIRETORIAS} 
-    Click Element    ${BTN_DIRETORIAS} 
+    Click Element    ${BTN_DIRETORIAS}
+    Sleep    2s 
 
 Validar campos do listar diretoria
     Wait Until Element Is Visible    locator=${TEXT_NAME_DIRETORIA}    timeout=10
@@ -28,3 +30,8 @@ Validar a ordem alfabetica
   END    
   @{lista_ordenada}    Evaluate    sorted(@{lista_texto}, key=str.casefold)
    Lists Should Be Equal    ${lista_texto}   ${lista_ordenada}
+
+Validar a diretoria na lista
+  [Arguments]    ${nomeEsperado}
+  ${text}        getTextIndex        ${LISTA}             20
+  Should Be Equal As Strings         ${nomeEsperado}      ${text}
