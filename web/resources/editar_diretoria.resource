@@ -17,14 +17,14 @@ Editar diretoria com sucesso
     Clicar     ${BUTTON_SALVAR_ALTERACOES} 
 
 Deixar campo diretoria vazio 
-    [Arguments]    ${editoriaNome}
     Sleep    2s 
     Wait Until Element Is Visible    locator=${BTN_CADASTRO}    timeout=10
     Click Element    ${BTN_CADASTRO}
     Wait Until Element Is Visible    locator=${BTN_DIRETORIAS} 
     Click Element    ${BTN_DIRETORIAS}
     clicarIndex      ${DIRETORIA}         3
-
+    
+    [Arguments]    ${editoriaNome}
     ${length}    Evaluate    len("${editoriaNome}")
     FOR    ${index}    IN RANGE    ${length}
         Press Keys    ${NAME_DIRETORIA}    BACKSPACE
