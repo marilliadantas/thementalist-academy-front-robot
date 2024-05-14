@@ -1,3 +1,3 @@
 *** Variables ***
-${NAME_DIRETORIA}               //input[contains(@class,'MuiInputBase-input MuiInput-input css-mnn31')]
+${NAME_DIRETORIA}               id=boardName
 ${BTN_DIRETORIAS}               id=Diretorias
