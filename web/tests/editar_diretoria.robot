@@ -24,11 +24,11 @@ Cenário 03: Editar diretoria com nome vazio
     Fazer login com o usuário administrador
     Acessar a página de diretoria
     Editar diretoria com sucesso     None
-    Validar a mensagem de campo obrigatorio "O campo diretoria é obrigatório"
+    Validar a mensagem "O campo diretoria é obrigatório"
 
-Cenário 04 - Editar diretoria com caracter não permitido
+Cenário 04: Editar diretoria com caracter não permitido
     Acessar página do projeto
     Fazer login com o usuário administrador
     Acessar a página de diretoria
     Editar diretoria com sucesso    Diretoria#
-    Validar a mensagem de erro "O campo 'diretoria' só pode conter letras e o caractere especial '&'."
+    Validar o alerta "O campo 'diretoria' só pode conter letras e o caractere especial '&'."

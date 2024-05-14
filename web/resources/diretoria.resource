@@ -2,14 +2,29 @@
 Resource    ../resources/util/util.resource
 
 *** Keywords ***
-Cadastrar diretoria com sucesso
-    Wait Until Element Is Visible    locator=${BTN_CADASTRO}    timeout=10
-    Click Element    Cadastros
-    Click Element    Diretorias
-    Wait Until Element Is Visible    locator=${NEW_CADASTRO}       timeout=10
-    Click Button    locator=${NEW_CADASTRO}
+Acessar tela de diretorias
+    Sleep    3s
+    waitElement                                ${BTN_CADASTRO}       10s
+    Click Element                              ${BTN_CADASTRO} 
 
-    ${diretoria}    FakerLibrary.Random Uppercase Letter
+    waitElement                                ${BTN_DIRETORIAS}     10s
+    Click Element                              ${BTN_DIRETORIAS}      
 
-    Input Text      locator=${NAME_DIRETORIA}    text=CEO&& ${diretoria}
-    Click Button    locator=${BUTTON_CADASTRAR}
+    waitElement                                ${NEW_CADASTRO}       10s      
+    Clicar                                     ${NEW_CADASTRO}        
+
+Quando o usuário informar o dado
+    [Arguments]    ${nomeDiretoria}
+    Run Keyword If    '${nomeDiretoria}' != 'None'
+    ...    Preencher   ${NAME_DIRETORIA}    ${nomeDiretoria}
+    
+    Clicar    ${BUTTON_SALVAR_ALTERACOES} 
+
+E exibir a diretoria cadastrada
+    Clicar                        ${ULTIMA_PAGINA}
+    Wait Until Page Contains      ${DIRETORIA_CRIADA}
+
+Validar a mensagem de retorno "${msgEsperada}"
+    ${text}        getText             ${MSG_REQUIRED} 
+    Should Be Equal As Strings         ${msgEsperada}        ${text}
+    Validar mensagem       ${MSG_REQUIRED}   ${msgEsperada}
