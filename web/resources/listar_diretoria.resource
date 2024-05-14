@@ -26,4 +26,4 @@ Validar a ordem alfabetica
     Append To List    ${lista_texto}    ${texto}      
   END    
   @{lista_ordenada}    Evaluate    sorted(@{lista_texto}, key=str.casefold)
-   Lists Should Be Equal    ${lista_texto}   ${lista_ordenada}    msg= A lista nao esta em ordem alfabetica    values=False
+   Lists Should Be Equal    ${lista_texto}   ${lista_ordenada}    msg= A lista não esta em ordem alfabética    values=False
