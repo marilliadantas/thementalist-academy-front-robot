@@ -55,7 +55,6 @@ Validar a mensagem de campo obrigatorio "${msg}"
     waitElement    ${ALERTA}      10s
     ${text}        getText        ${ALERTA}
     Should Be Equal As Strings    ${msg}        ${text}
-    Log To Console    ${text}
 
 Validar a mensagem de erro "${msgError}"
     waitElement    ${ALERT_MSG}       5s
