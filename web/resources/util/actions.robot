@@ -29,6 +29,13 @@ clicarTexto
     ${text}                          Get Text          ${element}
     Click Element                    ${element}     
 
+clicarIndex
+    [Arguments]                      ${element}        ${index}
+    waitElement                      ${element}        10s
+    ${elementos}=                    Get WebElements   ${element}
+    ${elemento}=                     Set Variable      ${elementos}[${index}]
+    Click Element                    ${elemento}
+
 Limpar campo
     [Arguments]                      ${element}
     waitElement                      ${element}        10s
