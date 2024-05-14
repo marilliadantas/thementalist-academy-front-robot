@@ -11,7 +11,7 @@ Cenário 01: Listar Diretoria
     Listar diretoria com sucesso
     Validar campos do listar diretoria
 
-Cernário 02: Validar Quantidade de Registros
+Cenário 02: Validar Quantidade de Registros
     Acessar página do projeto
     Fazer login com o usuário administrador
     Listar diretoria com sucesso
