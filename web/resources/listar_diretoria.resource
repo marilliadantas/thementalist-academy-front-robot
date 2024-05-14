@@ -21,11 +21,11 @@ Validar quantidade de registros
 
 Validar a ordem alfabetica
   Wait Until Element Is Visible    ${LISTA_DIRETORIA}     10s
-  @{lista}    Get WebElements   ${LISTA_DIRETORIA}/p
+  @{lista}    Get WebElements      ${LISTA_DIRETORIA}/p
   @{lista_texto}    Create List
   FOR    ${element}    IN    @{lista}
     ${texto}  Get Text    ${element}
-    Append To List    ${lista_texto}    ${texto}      
+    Append To List        ${lista_texto}    ${texto}      
   END    
   @{lista_ordenada}    Evaluate    sorted(@{lista_texto}, key=str.casefold)
    Lists Should Be Equal    ${lista_texto}   ${lista_ordenada}    msg= A lista não está em ordem alfabética    values=False

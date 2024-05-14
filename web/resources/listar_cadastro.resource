@@ -20,9 +20,9 @@ Validar lista contendo 50 usuários
     ${lista}=          Split String    ${text}            ${SPACE}
     ${quantidade}      Set Variable    ${LISTA}[0]
 
-    Should Be Equal As Strings     ${quantidade}     ${qtdEsperada}
+    Should Be Equal As Strings         ${quantidade}      ${qtdEsperada}
 
 Validar o usuário específico na lista
     [Arguments]    ${nomeEsperado}
-    ${text}        getTextIndex    ${LISTA}        14
-    Should Be Equal As Strings     ${nomeEsperado}      ${text}
+    ${text}        getTextIndex       ${LISTA}            14
+    Should Be Equal As Strings        ${nomeEsperado}     ${text}

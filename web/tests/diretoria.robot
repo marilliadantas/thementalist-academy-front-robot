@@ -17,25 +17,32 @@ Cenário 02: Cadastrar diretoria com campo diretoria vazio
     Fazer login com o usuário administrador
     Acessar tela de diretorias
     Quando o usuário informar o dado     None
-    Validar a mensagem "O campo diretoria é obrigatório"
+    Validar a mensagem de retorno "O campo diretoria é obrigatório"
 
 Cenário 03: Cadastrar diretoria com números
     Acessar página do projeto
     Fazer login com o usuário administrador
     Acessar tela de diretorias
     Quando o usuário informar o dado     2312323
-    Validar o alerta "O campo 'diretoria' só pode conter letras e o caractere especial '&'."
+    Validar o alerta de retorno "O campo 'diretoria' só pode conter letras e o caractere especial '&'."
 
 Cenário 04: Cadastrar diretoria com caracter especial @
     Acessar página do projeto
     Fazer login com o usuário administrador
     Acessar tela de diretorias
     Quando o usuário informar o dado     Diretoria@
-    Validar o alerta "O campo 'diretoria' só pode conter letras e o caractere especial '&'."
+    Validar o alerta de retorno "O campo 'diretoria' só pode conter letras e o caractere especial '&'."
 
 Cenário 05: Cadastrar diretoria já cadastrada
     Acessar página do projeto
     Fazer login com o usuário administrador
     Acessar tela de diretorias
     Quando o usuário informar o dado     Diretoria&
-    Validar o alerta "Não é possível salvar esse registro. Diretoria já cadastrada no sistema."
+    Validar o alerta de retorno "Não é possível salvar esse registro. Diretoria já cadastrada no sistema."
+
+Cenário 06: Cadastrar diretoria com um caractere
+    Acessar página do projeto
+    Fazer login com o usuário administrador
+    Acessar tela de diretorias
+    Quando o usuário informar o dado     D
+    Validar a mensagem de retorno "O campo diretoria deve conter no minímo 2 caracteres"

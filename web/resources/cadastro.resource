@@ -118,13 +118,13 @@ Cadastrar usuário com senhas diferentes
     Clicar             ${BUTTON_CADASTRAR}
 
 Cadastrar usuário com todos os campos vazios
-    Limpar campo         ${FULLNAME}              
-    Limpar campo         ${MAIL_CADASTRO}         
-    Limpar campo         ${ACESSPROFILE}         
-    Limpar campo         ${CPF}                    
-    Limpar campo         ${PASSWORD_CADASTRO}      
-    Limpar campo         ${CONFIRMPASSWORD}        
-    Clicar               ${BUTTON_CADASTRAR}
+    Limpar campo       ${FULLNAME}              
+    Limpar campo       ${MAIL_CADASTRO}         
+    Limpar campo       ${ACESSPROFILE}         
+    Limpar campo       ${CPF}                    
+    Limpar campo       ${PASSWORD_CADASTRO}      
+    Limpar campo       ${CONFIRMPASSWORD}        
+    Clicar             ${BUTTON_CADASTRAR}
 
 Validar a mensagem "${msgEsperada}"
     waitElement    ${MSG_ERRO}       5s
