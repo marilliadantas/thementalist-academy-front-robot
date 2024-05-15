@@ -24,5 +24,5 @@ Validar lista contendo 50 usuários
 
 Validar o usuário específico na lista
     [Arguments]    ${nomeEsperado}
-    ${text}        getTextIndex       ${LISTA}            14
+    ${text}        getTextIndex       ${LISTA}            30
     Should Be Equal As Strings        ${nomeEsperado}     ${text}

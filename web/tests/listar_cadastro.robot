@@ -21,4 +21,4 @@ Cenário 03: Listar usuário específico
     Acessar página do projeto
     Fazer login com o usuário administrador
     Listar usuarios com sucesso
-    Validar o usuário específico na lista   Adriano Lima
+    Validar o usuário específico na lista   Adriano Souza
