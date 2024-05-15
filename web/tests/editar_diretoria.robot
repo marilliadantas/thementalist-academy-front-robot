@@ -29,7 +29,7 @@ Cenário 04: Editar diretoria com caracter não permitido
     Editar diretoria com sucesso    Diretoria#
     Validar a mensagem de erro "O campo 'diretoria' só pode conter letras e o caractere especial '&'."
 
-Cenário 06: Editar diretoria com um caracter
+Cenário 05: Editar diretoria com um caracter
     Acessar página do projeto
     Fazer login com o usuário administrador
     Acessar tela de diretorias
