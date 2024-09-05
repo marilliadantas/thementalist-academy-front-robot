@@ -2,7 +2,7 @@
 Resource    ../resources/util/util.resource
 
 *** Keywords ***
-Editar diretoria com sucesso
+Editar diretoria
     Sleep    2s 
     Wait Until Element Is Visible    locator=${BTN_CADASTRO}    timeout=10
     Click Element    ${BTN_CADASTRO}
@@ -33,6 +33,7 @@ Deixar campo diretoria vazio
     Clicar     ${BUTTON_SALVAR_ALTERACOES} 
 
 Validar a diretoria com o nome
+    Sleep    2s
     [Arguments]    ${tituloEsperado}
     ${text}        getTextIndex       ${LISTA}             6
     Should Be Equal As Strings        ${tituloEsperado}    ${text}
